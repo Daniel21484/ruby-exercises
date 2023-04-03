@@ -1,5 +1,6 @@
 # The basics 
 ## Notes
+
 ### Literals
 A **literal** is any notation that lets you represent a fixed value in source code. For instance, all of the following are literals in Ruby:
 ```Ruby
@@ -57,7 +58,7 @@ Basically, a symbol is used when you want to reference something like a string b
 ### nil
 In programming, we need a way to express "nothing", and in Ruby, we do this through something called nil. A variable with the value of nil could be described as having 'nothing' or being 'completely empty', or even just simple 'not any specific type'. A situation where this may occur is where output is expected but none is returned, such as:
 ```Ruby
-irb :001 > puts "Hello, World!"
+puts "Hello, World!"
 Hello, World!
 => nil
 ```
@@ -65,33 +66,39 @@ The puts method prints out a string and returns nothing, so we see nil being ret
 
 You can explicitly refer to the nil value by using the nil literal in out code:
 ```Ruby
-irb :002 > x = nil        # nil literal used here
+x = nil        # nil literal used here
 => false
 ```
 It is possible to check if something is a nil type by using .nil?. For example:
 ```Ruby
-irb :001 > "Hello, World!".nil?
+"Hello, World!".nil?
 => false
 ```
 An important property of the nil type is that when used in an expression, such as an if statement, it will be treated as false, as it represents an absence of content.
 ```Ruby
-irb :001 > if nil 
-irb :002 > puts "Hello, World!" 
-irb :003 > end => nil
+if nil 
+puts "Hello, World!" 
+end
+=> nil
 ```
 In the above example, the return valuse (as shown by the hash rocket =>) is nil, and the code contained within the if is not run, as nil is interpreted as being a false condition. If instead you were to do the following:
 ```Ruby
-irb :001 > if 1 
-irb :002 > puts "Hello, World!" 
-irb :003 > end Hello, World! 
+if 1 
+puts "Hello, World!" 
+end Hello, World! 
 => nil
 ```
 Since 1 is not "nothing" or a false value, the code within the if is run and we see the output. We'll talk more about conditionals and if statements later, but just remember that nil can be used within a conditional statement, and will be treated as false.
 
 There's an important caveat to this which can be best illustrated by the following example:
 ```Ruby
-irb :001 > false == nil
+false == nil
 => false
 ```
 While both false and nil are treated as negative when evaluated in an expression, they are not equivalent, as demonstrated by the above.
+
+### Operations
+#### Adding, Subtracting, and Multiplying Integers
+
+Basic mathematical operations in Ruby are quite simple. To add two integers together just use the + operator as shown below in irb or any code editor. Make sure to type these examples into irb and feel free to play with other integers as well.
 

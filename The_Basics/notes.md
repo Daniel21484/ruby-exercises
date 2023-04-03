@@ -13,7 +13,7 @@
 		*nil                      # nil literal
 
 ### Strings
-	*A string is a list of characters in a specific sequence. In programming, we often have to work with text data like names, messages, and descriptions. Ruby uses strings to represent such data. You write string literals with either single quotes ('hi there') or double quotes ("hi there") on either side of the text; note that the quotes are syntactic components, not part of the value. Both single and double quote formats create a string. However, there are some subtile differences.
+	*A **string** is a list of characters in a specific sequence. In programming, we often have to work with text data like names, messages, and descriptions. Ruby uses strings to represent such data. You write string literals with either single quotes ('hi there') or double quotes ("hi there") on either side of the text; note that the quotes are syntactic components, not part of the value. Both single and double quote formats create a string. However, there are some subtile differences.
 
 	If you'd like to include single quotes within your string then you have two options. You can either use the double quote method or the single quote method with escaping: 
 
